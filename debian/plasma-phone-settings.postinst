@@ -1,0 +1,65 @@
+#! /bin/sh
+
+set -e
+
+if [ -e "/home/jingos/.config" ]; then
+
+cd /home/jingos/.config
+if [ -e "kdeglobals" ]; then
+	FONT_VAL=`awk -F "=" '/\[General\]/{a=1}a==1&&$1~/font/{print $2}' kdeglobals`
+	OLD_FONT="font=${FONT_VAL}"
+	NEW_FONT="font=Lato,10,-1,5,50,0,0,0,0,0"
+	sed -i "s/$OLD_FONT/$NEW_FONT/g" kdeglobals
+
+cat >> /home/jingos/.config/kdeglobals << EOF
+
+[Wallpapers]
+defaultLauncherWallpaper=file:///usr/share/wallpapers/jing/default.jpg
+defaultLockScreenWallpaper=file:///usr/share/wallpapers/jing/default.jpg
+EOF
+
+fi
+
+fi
+
+if [ -e "/home/jingos/.config/plasmashellrc" ]; then
+
+cat > /home/jingos/.config/plasmashellrc << EOF
+[PlasmaViews][Panel 3][Defaults]
+thickness=16
+
+[PlasmaViews][Panel 3][Horizontal1026]
+thickness=16
+
+[PlasmaViews][Panel 3][Horizontal1368]
+thickness=16
+
+[PlasmaViews][Panel 3][Horizontal2052]
+thickness=16
+
+[PlasmaViews][Panel 3][Horizontal2736]
+thickness=16
+
+[PlasmaViews][Panel 6][Defaults]
+thickness=1
+
+[PlasmaViews][Panel 6][Horizontal1026]
+thickness=1
+
+[PlasmaViews][Panel 6][Horizontal1368]
+thickness=1
+
+[PlasmaViews][Panel 6][Horizontal2052]
+thickness=1
+
+[PlasmaViews][Panel 6][Horizontal2736]
+thickness=1
+
+[ScreenConnectors]
+0=eDP-1
+
+EOF
+
+fi
+
+exit 0

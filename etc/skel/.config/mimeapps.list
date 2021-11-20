@@ -1,0 +1,8 @@
+[Default Applications]
+image/gif=org.kde.jinggallery.desktop;
+image/png=org.kde.jinggallery.desktop;
+image/jpeg=org.kde.jinggallery.desktop;
+inode/directory=org.kde.index.desktop;
+x-scheme-handler/http=chromium-browser.desktop;
+x-scheme-handler/https=chromium-browser.desktop;
+text/plain=wps-office-prometheus.desktop

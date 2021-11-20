@@ -1,0 +1,27 @@
+[$Version]
+update_info=delete_cursor_old_default_size.upd:DeleteCursorOldDefaultSize,kcminputrc_repeat.upd:kcminputrc_migrate_repeat_value
+
+
+[Libinput][1118][default][Microsoft Surface Type Cover Touchpad]
+LeftHanded=false
+NaturalScroll=true
+PointerAcceleration=0.000
+ScrollFactor=5
+TapToClick=true
+
+[Libinput][1267][default][ELAN962C:00 04F3:30F5 Touchpad]
+LeftHanded=false
+NaturalScroll=true
+PointerAcceleration=0.000
+ScrollFactor=5
+TapToClick=true
+
+[Libinput][1][1][Sprd Keyboard]
+LeftHanded=false
+NaturalScroll=true
+PointerAcceleration=0.270
+TapToClick=true
+SingleTapToClick=false
+
+[Mouse]
+cursorTheme=jing_cursor

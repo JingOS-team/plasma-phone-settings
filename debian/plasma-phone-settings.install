@@ -1,0 +1,4 @@
+etc /
+usr /
+var /
+debian/41plamo_casper_setup /usr/share/initramfs-tools/scripts/casper-bottom/

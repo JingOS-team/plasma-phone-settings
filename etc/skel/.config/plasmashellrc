@@ -1,0 +1,30 @@
+[PlasmaViews][Panel 3][Defaults]
+thickness=36
+
+[PlasmaViews][Panel 3][Horizontal1026]
+thickness=36
+
+[PlasmaViews][Panel 3][Horizontal1368]
+thickness=36
+
+[PlasmaViews][Panel 3][Horizontal2052]
+thickness=36
+
+[PlasmaViews][Panel 3][Horizontal2736]
+thickness=36
+
+[PlasmaViews][Panel 6][Defaults]
+thickness=1
+
+[PlasmaViews][Panel 6][Horizontal1026]
+thickness=1
+
+[PlasmaViews][Panel 6][Horizontal1368]
+thickness=1
+
+[PlasmaViews][Panel 6][Horizontal2052]
+thickness=1
+
+[PlasmaViews][Panel 6][Horizontal2736]
+thickness=1
+

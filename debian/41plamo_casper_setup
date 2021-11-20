@@ -1,0 +1,40 @@
+#!/bin/sh
+
+PREREQ=""
+DESCRIPTION="Setting up plasma-mobile settings"
+
+prereqs()
+{
+       echo "$PREREQ"
+}
+
+case $1 in
+# get pre-requisites
+prereqs)
+       prereqs
+       exit 0
+       ;;
+esac
+
+. /scripts/casper-functions
+
+log_begin_msg "$DESCRIPTION"
+
+# We override the setup created by 40kde_neon_setup to login to phablet user and use plasma-mobile
+if [ -f /root/usr/bin/sddm ]; then
+    cat << EOF > /root/etc/sddm.conf
+[Users]
+MinimumUid=999
+
+[Autologin]
+User=jingos
+Session=plasma-mobile.desktop
+Relogin=true
+EOF
+fi
+
+file=/root/usr/share/applications/calamares.desktop
+#sed -i 's/sudo/pkexec/' $file
+
+log_end_msg
+
